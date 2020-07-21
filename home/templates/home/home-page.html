@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+   
+</head>
+<body>
+
+    {% extends 'home/temp.html' %}
+
+    {% block content %}
+    
+ 
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Team</li>
+        <li>Contact</li>
+    </ul>
+
+<form action="add">
+
+    Enter 1st number: <input type="text", name="num1"><br>
+    Enter 2nd number: <input type="text", name="num2"><br>
+    <input type="submit">
+</form> 
+    
+    {% endblock %}
+
+    <h1>{{name}}</h1>
+</body>
+</html>
